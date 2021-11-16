@@ -17,7 +17,7 @@ def index():
 @app.route("/",methods=['POST'])
 def predict():
 	# Link to dataset from github
-	url =  "YoutubeSpamMergedData.csv"
+	url =  "https://raw.githubusercontent.com/yaslimi01/ML-Flask/YoutubeSpamMergedData.csv"
 	df= pd.read_csv(url)
 	df_data = df[["CONTENT","CLASS"]]
 	# Features and Labels
